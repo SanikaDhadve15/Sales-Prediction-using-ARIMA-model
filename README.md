@@ -4,7 +4,7 @@
 **ARIMA Sales Forecasting for Multi-Store, Multi-Item Sales Data**  
 This repository contains a time series analysis project using the **ARIMA (AutoRegressive Integrated Moving Average)** model to forecast **3 months of future sales** for a dataset containing **50 items** across **10 different stores**.
 
----
+
 
 ##  Objective
 
@@ -16,7 +16,7 @@ The notebook walks through the end-to-end pipeline of:
 3. ARIMA Model Fitting
 4. Visualization of Forecasts
 
----
+
 
 ##  Features
 
@@ -27,7 +27,7 @@ The notebook walks through the end-to-end pipeline of:
 -  Time series forecasting using `statsmodels` **ARIMA**  
 -  **Matplotlib** and **Plotly** for static and interactive plotting  
 
----
+
 
 ##  Understanding ARIMA
 
@@ -46,7 +46,7 @@ Where:
 - `d`: Number of differences to make the series stationary  
 - `q`: Number of lagged forecast errors in the prediction  
 
----
+
 
 ##  Working
 
@@ -56,7 +56,7 @@ Where:
 - Data is filtered store-wise and item-wise (e.g., Store 1 and Item 1)
 - This allows modeling one series at a time for higher accuracy
 
----
+
 
 ### 2.  Exploratory Data Analysis (EDA)
 
@@ -64,7 +64,7 @@ Where:
 - EDA helps detect **trends**, **seasonality**, and **outliers**
 - **Interactive Plotly charts** improve interpretability
 
----
+
 
 ### 3.  Decomposition of Time Series
 
@@ -73,9 +73,6 @@ The series is decomposed into:
 - **Seasonality**: Repeating short-term cycle
 - **Residual**: Irregular or random component
 
-
-
----
 
 ### 4.  Stationarity Check (ADF Test)
 
@@ -89,7 +86,6 @@ To ensure the series is stationary—a requirement for ARIMA.
 If `p-value ≤ 0.05`: Reject H₀ → The series is stationary  
  Otherwise: Difference the series (e.g., subtract previous value) to make it stationary
 
----
 
 ### 5.  ACF and PACF Analysis
 
@@ -101,15 +97,11 @@ Used to determine ARIMA parameters:
 - **PACF (Partial ACF)**:  
   Shows influence of past values after removing earlier lags → helps determine `p`
 
----
 
 ### 6.  ARIMA Model Fitting
 
 Using the determined parameters (`p`, `d`, `q`), the model is fitted:
 
-
-
----
 
 ### 7.  Forecasting & Visualization
 
@@ -122,7 +114,6 @@ Using the determined parameters (`p`, `d`, `q`), the model is fitted:
 
 These visualizations help validate model performance.
 
----
 
 ### 8.  Model Evaluation (Optional)
 
