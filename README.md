@@ -9,19 +9,19 @@ To predict sales trends and future demand, helping businesses make data-driven d
 4.Visualization of forecasts
 
  Features
--Interactive Plotly visualizations for intuitive EDA
--Seasonal decomposition to extract trend, seasonality, and residuals
--Statistical tests for stationarity (ADF Test)
--ACF and PACF plots for optimal ARIMA parameter selection
--Time series forecasting using statsmodels ARIMA
--Matplotlib and Plotly for static and interactive plotting
+1.Interactive Plotly visualizations for intuitive EDA
+2.Seasonal decomposition to extract trend, seasonality, and residuals
+3.Statistical tests for stationarity (ADF Test)
+4.ACF and PACF plots for optimal ARIMA parameter selection
+5.Time series forecasting using statsmodels ARIMA
+6.Matplotlib and Plotly for static and interactive plotting
 
 
 Understanding ARIMA
 The ARIMA model is widely used for time series forecasting and is defined by three key parameters:
--AR (AutoRegressive): Regression of the variable against its own previous values (lags).
--I (Integrated): Differencing of raw observations to make the time series stationary.
--MA (Moving Average): Modeling the error term as a linear combination of error terms from the past.
+1.AR (AutoRegressive): Regression of the variable against its own previous values (lags).
+2.I (Integrated): Differencing of raw observations to make the time series stationary.
+3.MA (Moving Average): Modeling the error term as a linear combination of error terms from the past.
 
 The model is written as:
 ARIMA(p, d, q)
